@@ -1,0 +1,26 @@
+<mat-toolbar color="primary" class="toolbar">
+  <img src="../assets/simbolo.png" alt="Logo" class="logo-toolbar" />
+  <span class="spacer"></span>
+  <a mat-button (click)="scrollTo('about')">Sobre</a>
+  <a mat-button (click)="scrollTo('services')">Áreas</a>
+  <a mat-button (click)="scrollTo('contact')">Contato</a>
+</mat-toolbar>
+
+<a
+  class="whatsapp-fab"
+  href="https://wa.me/37998110577?text=Olá,%20gostaria%20de%20agendar%20uma%20consulta"
+  target="_blank"
+  rel="noopener noreferrer"
+  aria-label="Fale pelo WhatsApp"
+>
+  <img src="assets/WhatsApp.svg" alt="WhatsApp" />
+</a>
+
+<app-hero></app-hero>
+<section id="about"><app-about></app-about></section>
+<section id="services"><app-services></app-services></section>
+<section id="contact"><app-contact></app-contact></section>
+
+<footer class="image-footer">
+  <img src="../assets/footer.png" alt="Contatos Sales & Pádua" />
+</footer>
