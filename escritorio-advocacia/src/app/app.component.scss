@@ -30,9 +30,10 @@ body {
 }
 
 .footer {
-  justify-content: center;
-  text-align: center;
-  font-size: 0.9rem;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto; /* opcional: centraliza a imagem */
 }
 
 .whatsapp-fab {
