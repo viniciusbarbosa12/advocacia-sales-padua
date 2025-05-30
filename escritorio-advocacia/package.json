@@ -5,6 +5,8 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
+    "build:vercel": "ng build --configuration production && npm run move-seo",
+    "move-seo": "cp ./src/static-seo/*.xml ./dist/escritorio-advocacia/browser/ && cp ./src/static-seo/*.txt ./dist/escritorio-advocacia/browser/",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "serve:ssr:escritorio-advocacia": "node dist/escritorio-advocacia/server/server.mjs"
